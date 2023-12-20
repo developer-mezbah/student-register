@@ -2,7 +2,7 @@ import { PrismaClient } from "@prisma/client";
 import { NextResponse } from "next/server";
 
 // delete single student
-export async function POST(req, { params }) {
+export async function DELETE(req, { params }) {
   const id = parseInt(params.id);
   try {
     const prisma = new PrismaClient();
